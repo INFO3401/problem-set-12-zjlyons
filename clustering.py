@@ -77,3 +77,10 @@ knnModel = runKNN(nbaData,'pos','player',5)
 classifyPlayer(nbaData.loc[nbaData['player']=='LeBron James'], nbaData, knnModel, 'pos','player')
 
 kmeansmodel = runKMeans(nbaData, ['pos','player'])
+
+#Monday - Problem 2 and 3
+#Modifications to starter code are seen above in the runKNN function. From the analysis that we've done, I'd say that k-NN is probably not the best 
+#way to predict position. Both our accuracy and F1 (which accounts for precision and recall) metrics hover around 0.5, which is not a good indication
+#that our model is effective.
+
+
